@@ -50,7 +50,7 @@ The datasets used in this project were sourced from the **City of Vancouver Open
    - **Region**: The geographic region of the permit issuance.
    - **Permit Activity**: Type of water-related work (new installations, repairs, etc.).
 
-#### PLACEHOLDER IMAGE FOR DATA COLLECTION PROCESS ####
+![image](https://github.com/user-attachments/assets/1ff752c7-f106-48f3-96e3-0e98312ba6aa)
 
 ## Data Pipeline
 A well-structured data pipeline was designed to process and prepare the water permits data:
@@ -66,7 +66,7 @@ A well-structured data pipeline was designed to process and prepare the water pe
    - Ensuring data consistency across 2023 and 2024.
    - Preparing the data for further analysis.
 
-#### PLACEHOLDER IMAGE FOR DATA PIPELINE WORKFLOW ####
+![image](https://github.com/user-attachments/assets/bf95ba1d-0135-4da5-9ba2-07567031a22b)
 
 ## Data Analysis
 Once the data was cleaned and transformed, it was ready for analysis. Key tasks included:
@@ -75,7 +75,7 @@ Once the data was cleaned and transformed, it was ready for analysis. Key tasks 
 - **Diagnostic Analysis**: Investigating the reasons for any observed patterns or anomalies, such as sudden changes in permit activity.
 - **Predictive Analysis**: Based on historical trends, predictions were made for future water permit activities.
 
-#### PLACEHOLDER IMAGE FOR DATA ANALYSIS PROCESS ####
+![image](https://github.com/user-attachments/assets/23f2d30c-db19-4748-935b-4b9ce2c1ff4a)
 
 ## Data Visualization
 Due to budget constraints, **Excel** was used for visualization. The cleaned datasets were imported into Excel, where various charts and dashboards were created:
@@ -86,7 +86,7 @@ Due to budget constraints, **Excel** was used for visualization. The cleaned dat
 
 These charts were then integrated into an interactive Excel dashboard and exported as a PDF report for stakeholders. The dashboard enables easy interpretation and action on the data-driven insights.
 
-#### PLACEHOLDER IMAGE FOR EXCEL DASHBOARDS ####
+![image](https://github.com/user-attachments/assets/e3b795ae-399f-4a87-bc5f-093f6d541776)
 
 ## Key Results and Insights
 From the analysis, the following insights were gathered:
