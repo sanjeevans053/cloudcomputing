@@ -96,7 +96,8 @@ From the analysis, the following insights were gathered:
 - **Regional Differences**: Specific regions of Vancouver displayed higher water permit activity, indicating targeted infrastructure projects or local regulations driving these trends.
 - **Future Projections**: Based on the trends, an increase in water permits for 2025 is anticipated, particularly in new residential installations and repairs.
 
-#### PLACEHOLDER IMAGE FOR INSIGHTS AND TRENDS ####
+![image](https://github.com/user-attachments/assets/136111dc-be6c-4874-a6f8-f8d1965cc6bf)
+
 ## How to Run the Project
 
 ### Upload Datasets
