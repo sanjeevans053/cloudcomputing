@@ -98,38 +98,8 @@ From the analysis, the following insights were gathered:
 
 ![image](https://github.com/user-attachments/assets/136111dc-be6c-4874-a6f8-f8d1965cc6bf)
 
-## How to Run the Project
 
-### Upload Datasets
-1. **Upload the Datasets**: 
-   - Navigate to the AWS S3 console and create a new S3 bucket (or use an existing one) to store the 2023 and 2024 water permit datasets.
-   - Upload the Excel files into separate folders within the bucket, organized by year (`/2023/` and `/2024/`).
-
-### Configure AWS Glue
-2. **Set Up AWS Glue Jobs**:
-   - Open the AWS Glue console and create a new job to handle data cleaning and transformation.
-   - Define the ETL process by specifying the input as the S3 bucket with the uploaded datasets.
-   - Set up transformations such as standardizing column names, handling missing data, and adding a `year` column to facilitate comparisons between 2023 and 2024 datasets.
-   - Define the output path in S3 where the cleaned data will be stored.
-
-### Run the Data Pipeline
-3. **Execute the AWS Glue Jobs**:
-   - Trigger the Glue jobs to process the uploaded datasets.
-   - The jobs will clean and transform the raw data and store the processed data in the specified output S3 bucket, ready for analysis.
-
-### Data Analysis
-4. **Analyze the Data**:
-   - Once the data is processed and stored in the curated S3 bucket, download the cleaned CSV files.
-   - Import the datasets into Excel or any preferred tool for further analysis.
-   - Perform descriptive and diagnostic analyses to identify trends, patterns, and anomalies in the water permit data.
-
-### Generate Dashboards
-5. **Create Dashboards in Excel**:
-   - Use Excel to generate visualizations such as line charts, bar charts, and pie charts.
-   - Summarize key insights from the data analysis, including permit issuance trends, approval rates, and regional activity.
-   - Export the final dashboard as a PDF report for stakeholders.
-  
-## Data Protection (Part 2)
+## Data Protection
 
 Data protection in this project is critical, particularly as it involves sensitive information such as personal identifiers from the City of Vancouver Water Permit datasets. The project ensures the security of this data through the following key AWS services:
 
@@ -140,22 +110,23 @@ Data protection in this project is critical, particularly as it involves sensiti
 ### AWS IAM Roles
 - **Access Control with IAM Roles**: Role-based access control was configured using AWS Identity and Access Management (IAM). Only authorized users with specific roles (e.g., data engineers, analysts) were granted access to the data for reading, writing, or processing. Unauthorized access attempts were logged for auditing purposes.
   
-  ![IAM Role - Lab Role](path/to/role_image)
+![image](https://github.com/user-attachments/assets/9734153e-19f5-4b78-9b37-6f8f5bdcbebc)
   
 ### AWS KMS (Key Management Service)
 - **Data Encryption**: AWS KMS was employed to manage encryption keys, ensuring all sensitive data was encrypted both at rest and in transit. This added an extra layer of protection, ensuring that even if unauthorized access to the dataset occurs, the data remains encrypted and inaccessible.
   
-  ![KMS Data Encryption](path/to/kms_encryption_image)
 
 - **Backup and Replication**: Backups of water permits data were regularly performed, and replication rules were configured to store encrypted data in different geographic regions to ensure redundancy and disaster recovery.
 
-  ![Backup for Water Permits Data](path/to/backup_image)
+![image](https://github.com/user-attachments/assets/380ff4d0-d8c3-459a-97fb-dfd180609a87)
 
-  ![Replication Rules for Water Permits Data](path/to/replication_rules_image)
+![image](https://github.com/user-attachments/assets/7205c416-3fc9-4aa5-b816-946f43c95af8)
 
 ## Data Governance
 
 Effective data governance was key to maintaining control over access, usage, and security of the water permits data. Two critical AWS services were utilized:
+
+![image](https://github.com/user-attachments/assets/68c69217-dbb8-4a3b-8465-0d458080c0cf)
 
 ### AWS IAM (Identity and Access Management)
 - **Controlled User Access**: AWS IAM was employed to regulate access to sensitive data. IAM policies ensured that access was restricted to authorized individuals based on roles, preventing accidental or malicious access by unauthorized users. Users were segmented based on their roles—data engineers had full access to modify the pipeline, while analysts were granted read-only access.
@@ -163,7 +134,6 @@ Effective data governance was key to maintaining control over access, usage, and
 ### AWS KMS (Key Management Service)
 - **Key Creation and Control**: AWS KMS created and managed encryption keys for the water permits dataset. These encryption keys ensured that data remained confidential and was only accessible by those who were authorized.
   
-  ![KMS Key](path/to/kms_key_image)
 
 ## Data Monitoring
 
@@ -173,29 +143,17 @@ AWS services played a crucial role in monitoring and maintaining the operational
 - **Real-Time Monitoring**: AWS CloudWatch was configured to monitor key performance metrics, including job executions, data processing times, and overall pipeline health. It enabled the team to observe real-time metrics and logs related to the ETL pipeline and other AWS services used in the project.
 - **Alarms and Thresholds**: CloudWatch alarms were set up to notify the team when certain performance thresholds were exceeded (e.g., job failures, high memory usage), enabling a proactive response to issues.
 
-  ![CloudWatch Dashboard](path/to/cloudwatch_dashboard_image)
-  
-  ![CloudWatch Alarm](path/to/cloudwatch_alarm_image)
+ ![image](https://github.com/user-attachments/assets/8b1f210d-846f-4e75-800c-2a4ecfeec979)
 
-### AWS CloudTrail
-- **Auditing and Compliance**: AWS CloudTrail recorded all API calls and user activities across the AWS environment. This ensured a comprehensive audit trail for every action taken, allowing for thorough security auditing and tracking of any unauthorized or suspicious activities.
 
-  ![CloudTrail Logs](path/to/cloudtrail_image)
 
-- **User Activity Logs**: CloudTrail's user activity logs were stored in an S3 bucket, where they were further analyzed for security incidents or compliance checks.
+![image](https://github.com/user-attachments/assets/11c383e1-3688-48a1-aad9-7d11b61c90dc)
 
-  ![User Logs in S3](path/to/s3_logs_image)
 
-## Data Quality and Workflow
+## CloudTrail
 
-Maintaining data quality was another priority, ensuring that the dataset was consistent, accurate, and timely for analysis and reporting.
+![image](https://github.com/user-attachments/assets/36b43b81-0419-426d-8708-f49c7a5faa1b)
 
-### ETL Workflow for Data Quality
-- **AWS Glue Jobs**: Automated jobs were set up to monitor the quality of data at each stage of the ETL process. The jobs checked for anomalies such as missing data, duplicates, or format inconsistencies. A data quality schedule was created to run these checks at regular intervals.
-  
-  ![ETL Workflow](path/to/etl_workflow_image)
-  
-  ![Data Quality Schedule](path/to/data_quality_schedule_image)
 
 ### QRPR ETL Job Monitoring
 - **Job Status Monitoring**: QRPR ETL jobs were monitored to ensure successful completion. Any job failures were logged and reported through CloudWatch, prompting an alert for immediate investigation.
