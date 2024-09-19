@@ -27,9 +27,11 @@ The objective of this project was to analyze and manage professional development
 
 ![Screenshot (771)](https://github.com/user-attachments/assets/6526637f-e726-4bd6-8908-71ed53eedad5)
 
-![Screenshot 2024-07-10 160114](https://github.com/user-attachments/assets/476f95ae-9280-420b-9146-42917e486bde) 
+![Screenshot 2024-07-10 160412](https://github.com/user-attachments/assets/8e43ac86-ea5a-4ba1-aa9e-fa3bea3ace29)
+
 **Created AWS Account** 
-![Screenshot 2024-07-10 160158](https://github.com/user-attachments/assets/804f6bbe-0bcb-4fd2-9bdc-c9bbf11aebbf) 
+![Screenshot (729)](https://github.com/user-attachments/assets/0e14d747-f578-4244-a3dc-515e71046df4)
+
 
 ### Dataset
 
@@ -45,9 +47,6 @@ The objective of this project was to analyze and manage professional development
 
 *Completion Records:* Proof of completed activities and expenses.
 ![Screenshot (771)](https://github.com/user-attachments/assets/194346bb-1b6b-4411-9e97-c165befe533e) 
-![Screenshot 2024-07-21 142953](https://github.com/user-attachments/assets/19f16db0-660a-4143-90f8-643ae96d267f) 
-![Screenshot 2024-07-21 143200](https://github.com/user-attachments/assets/b98507ba-e60f-4dff-8707-7444e0f20df0) 
-![Screenshot 2024-07-21 143333](https://github.com/user-attachments/assets/5a5334d8-8902-4a86-a4c0-94e73d2cfc0e) 
 
 ### Methodology
 
@@ -63,7 +62,8 @@ The objective of this project was to analyze and manage professional development
   
   - Security: KMS encryption was applied to protect sensitive employee data.
 
-![Aws creating Folder](https://github.com/user-attachments/assets/0beb74e8-744a-4103-88d0-950283f16fbd) 
+![Screenshot (770)](https://github.com/user-attachments/assets/502a67bc-8155-4819-8891-7c5c5a7d629b)
+
 
 #### 2. Data Cleaning and Transformation
 
@@ -75,7 +75,8 @@ The objective of this project was to analyze and manage professional development
   
   - Cleaned data was stored in the Raw S3 bucket.
 
-![Class Participation 3](https://github.com/user-attachments/assets/eae7689c-1816-478b-a2dc-194c0f83cad3) 
+![image](https://github.com/user-attachments/assets/f3fab158-58fa-447f-bfe3-6f3208e1a266)
+
 
 #### 3. ETL Pipeline Design
 
@@ -85,14 +86,22 @@ The objective of this project was to analyze and manage professional development
   
   - Key transformations included renaming columns for consistency, filtering out unnecessary data, and aggregating the tax levy datasets.
 
-![ETL on DRAw io1](https://github.com/user-attachments/assets/103cb2e6-3082-4950-aad6-40f312c2df10) 
-![ETL on Draw io](https://github.com/user-attachments/assets/22f9d4a1-6c68-42f4-9d64-ce628f52e3c4) 
+
+![Screenshot (802)](https://github.com/user-attachments/assets/17a1a03f-1862-4922-9c92-65e68a8649df)
+
+![Screenshot (803)](https://github.com/user-attachments/assets/8c9d7354-872b-4526-b236-72b29b344c2e)
+
+![Screenshot (804)](https://github.com/user-attachments/assets/cb22ae6e-aab1-41bd-8cb8-b775360bb4aa)
+
+ 
+
 
 **_ETL Implementation Using AWS Glue:_**
 
   - The ETL pipeline was implemented in AWS Glue to extract data from the Raw S3 bucket, transform it,... and load it into the Curated S3 bucket.
 
-![image](https://github.com/user-attachments/assets/317d8350-5361-4169-bd4c-2d9f33e753f0) 
+![Screenshot 2024-07-29 135057](https://github.com/user-attachments/assets/3e78a691-ea17-48f3-9507-a2c0458bd4d7)
+
 
 #### 4. Data Analysis
 
@@ -100,7 +109,8 @@ The objective of this project was to analyze and manage professional development
 
 **_SQL Queries:_** SQL was utilized only for creating tables to organize the datasets in Athena and point to the curated data stored in S3.
 
-![image](https://github.com/user-assets/51e20f50-b23f...) 
+![image](https://github.com/user-attachments/assets/f478961d-6148-4303-a186-843f3b2c1a51)
+ 
 
 **_Data Analysis:_**
 
@@ -111,6 +121,8 @@ The objective of this project was to analyze and manage professional development
 #### 5. Data Protection and Governance:
 
 **_Data Encryption:_** KMS keys were used to encrypt all data stored in S3.
+![image](https://github.com/user-attachments/assets/c841f1bf-beba-4c7d-8dc8-8b1ba8fa1bf6)
+
 
 **_Backup and Replication:_**
 
@@ -120,7 +132,8 @@ The objective of this project was to analyze and manage professional development
   
   - Automated Data Governance: AWS Glue was used to conduct regular data quality checks, with a scheduled automation process ensuring data consistency and accuracy.
 
-![class 7... ](https://github.com/user-assets/0dcd524...) 
+![image](https://github.com/user-attachments/assets/aaf7c3d9-b255-47d0-9ae3-b5a9c00495a6)
+
 
 #### 6. Data Monitoring
 
@@ -128,11 +141,11 @@ Amazon CloudWatch and AWS CloudTrail were employed for continuous monitoring and
 
 CloudWatch was used to monitor key metrics such as resource consumption and cost estimations.
 
-![Class_Participation ](https://github.com/user-assets/651...) 
+![image](https://github.com/user-attachments/assets/aa80463d-6fbb-45ab-8e2a-dacd8e007eb0)
+
 
 CloudTrail tracked all user activities and API calls, storing the logs in S3 for audit purposes....
 
-![Class_participation_9_2 ](https://github.com/user-assets/926...) 
 
 #### 7. Data Visualization
 
@@ -142,7 +155,6 @@ Excel was utilized to create interactive charts such as pie, bar, and line graph
 
 A dashboard was created to present insights, including professional development costs and trends.
 
-![image ](https://github.com/user-assets/cd5...) 
 
 #### 8. Data Publishing:
 
@@ -152,9 +164,6 @@ EC2 Instances were configured to host and publish the processed data and visuali
 
 The processed datasets were made accessible to stakeholders via a web interface hosted on the EC2 instances.
 
-![image ](https://github.com/user-assets/9d2...) 
-![image ](https://github.com/user-assets/e4a...) 
-![Screenshot ](https://github.com/user-assets/e82...) 
 
 **_Data Storage:_** The transformed data and visual reports were uploaded to Remote access, allowing for easy access and sharing among stakeholders.
 
@@ -182,24 +191,17 @@ Excel: Used to generate interactive visualizations such as charts and dashboards
 
 Draw.io: Used for visualizing the ETL pipeline workflow.
 
-### Additional Tools
-
-![Class Participation ](https://github.com/user-assets/8bf...) 
-
 **Amazon SageMaker:**
 
 Used for processing emails and extracting relevant data for table creation.
 
 SageMaker's machine learning capabilities were applied to identify and structure key information from emails related to professional development activities....
 
-![image ](https://github.com/user-assets/662...) 
-![image ](https://github.com/user-assets/e1a...) 
+
 
 **DynamoDB**
 
-Structured tables were created in DynamoDB from the extracted email data, allowing for seamless integration into the overall analysis pipeline.
-
-![image ](https://github.com/user-assets/755...) 
+Structured tables were created in DynamoDB from the extracted email data, allowing for seamless integration into the overall analysis pipeline. 
 
 These tables contained structured data, such as employee professional development requests and related approvals.
 
