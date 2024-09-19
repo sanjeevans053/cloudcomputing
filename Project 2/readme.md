@@ -43,8 +43,7 @@ The objective of this project was to analyze and manage professional development
 *Approval Status:* Whether activities were approved or pending....
 
 *Completion Records:* Proof of completed activities and expenses.
-
-![Screenshot 2024-07-21 143055](https://github.com/user-attachments/assets/47e1577e-8332-436b-8b41-bd63833620db) 
+![Screenshot (771)](https://github.com/user-attachments/assets/194346bb-1b6b-4411-9e97-c165befe533e) 
 ![Screenshot 2024-07-21 142953](https://github.com/user-attachments/assets/19f16db0-660a-4143-90f8-643ae96d267f) 
 ![Screenshot 2024-07-21 143200](https://github.com/user-attachments/assets/b98507ba-e60f-4dff-8707-7444e0f20df0) 
 ![Screenshot 2024-07-21 143333](https://github.com/user-attachments/assets/5a5334d8-8902-4a86-a4c0-94e73d2cfc0e) 
