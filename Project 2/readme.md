@@ -25,7 +25,8 @@
 ### Objective
 The objective of this project was to analyze and manage professional development data for UCW HR Office. The project involved creating a data platform that stores, processes, and provides insights into the university’s professional development activities, tracking employee participation, costs, and compliance with UCW policies.
 
-![Draw io, week 2](https://github.com/user-attachments/assets/e418948a-6b8c-47e6-9ae6-9d9b6a731055) 
+![Screenshot (771)](https://github.com/user-attachments/assets/6526637f-e726-4bd6-8908-71ed53eedad5)
+
 ![Screenshot 2024-07-10 160114](https://github.com/user-attachments/assets/476f95ae-9280-420b-9146-42917e486bde) 
 **Created AWS Account** 
 ![Screenshot 2024-07-10 160158](https://github.com/user-attachments/assets/804f6bbe-0bcb-4fd2-9bdc-c9bbf11aebbf) 
