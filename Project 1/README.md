@@ -154,9 +154,3 @@ AWS services played a crucial role in monitoring and maintaining the operational
 
 ![image](https://github.com/user-attachments/assets/36b43b81-0419-426d-8708-f49c7a5faa1b)
 
-
-### QRPR ETL Job Monitoring
-- **Job Status Monitoring**: QRPR ETL jobs were monitored to ensure successful completion. Any job failures were logged and reported through CloudWatch, prompting an alert for immediate investigation.
-![image](https://github.com/user-attachments/assets/b1107d67-05e2-410a-9803-53020b19fae8)
-
-
